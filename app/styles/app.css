@@ -4,3 +4,8 @@
 ul{
   list-style-type: none;
 }
+
+.well{
+  background-color: white;
+  border-color: black;
+}

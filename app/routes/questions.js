@@ -13,7 +13,6 @@ actions: {
   },
   update(question, params) {
       Object.keys(params).forEach(function(key) {
-        debugger;
         if(params[key]!==undefined) {
           question.set(key, params[key]);
         }
