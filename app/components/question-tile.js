@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     questionHide() {
       this.set('viewQuestion', false)
     },
-    update(question, params) {
+    update(question,params) {
       this.sendAction('update', question, params)
     },
     delete(question) {

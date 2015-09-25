@@ -9,7 +9,7 @@ actions: {
   update(question) {
     var params = {
       title: this.get('title'),
-      question: this.get('question'),
+      description: this.get('description'),
       author: this.get('author'),
     };
     this.set('updateQuestionForm', false);

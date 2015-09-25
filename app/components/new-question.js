@@ -10,12 +10,12 @@ actions: {
   save() {
     var params = {
     title: this.get('title'),
-    question: this.get('question'),
+    description: this.get('description'),
     author: this.get('author'),
    };
    this.set('addNewQuestion', false),
    this.set('title', ''),
-   this.set('question', ''),
+   this.set('description', ''),
    this.set('author', ''),
    this.sendAction('save', params);
   }

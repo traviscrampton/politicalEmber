@@ -12,14 +12,15 @@ actions: {
     this.transitionTo('questions');
   },
   update(question, params) {
-    Object.keys(params).forEach(function(key) {
-      if(params[key]!==undefined){
-        question.set(key,params[key]);
-      }
-    });
-    question.save();
-    this.transitionTo('questions')
-  },
+      Object.keys(params).forEach(function(key) {
+        debugger;
+        if(params[key]!==undefined) {
+          question.set(key, params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('questions');
+    },
 
   destroyQuestion(question){
     question.destroyRecord();
