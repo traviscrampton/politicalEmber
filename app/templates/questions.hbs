@@ -2,11 +2,13 @@
 
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 
 {{new-question save="save"}}
 
 
+
 {{outlet}}
+{{#link-to 'index'}}Home{{/link-to}}
