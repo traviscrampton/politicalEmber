@@ -1,0 +1,12 @@
+<h2>Today's Featured Reasonable Questions</h2>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+
+{{new-question save="save"}}
+
+
+{{outlet}}
