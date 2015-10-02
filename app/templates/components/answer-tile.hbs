@@ -1,0 +1,24 @@
+{{yield}}
+
+<h1>{{model.title}}</h1>
+<h3>{{model.description}}</h3>
+
+
+<form>
+  <div class="form-group">
+    <label for="answerDescription">Your Conservative Answer</label>
+    {{textarea row=4 id="answerDescription" value=answerDescription class="form-control"}}
+  </div>
+    <button class="btn btn-warning"{{action "saveAnswer" model}}>GOP ANSWER</button>
+</form>
+
+
+
+    <ul>
+    {{#each model.answers as |answer|}}
+  <div class="jumbotron">
+        <li>{{answer.answerDescription}}</li>
+      </div>
+    <br><br>
+    {{/each}}
+    </ul>

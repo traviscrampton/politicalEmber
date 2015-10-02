@@ -12,6 +12,8 @@
     <button class="btn btn-primary" {{action 'showQuestion'}}>View Question</button><br>
       {{/if}}
       <br><button class="btn btn-danger"{{action 'delete' question}}>Delete Question</button>
+      <br><br>
+      {{#link-to 'answer' question.id class="btn btn-warning"}}Answer Question{{/link-to}}
   </li>
 </div>
 {{yield}}
