@@ -17,7 +17,7 @@
     <ul>
     {{#each model.answers as |answer|}}
   <div class="jumbotron">
-        <li>{{answer.answerDescription}}</li>
+        <li>{{answer.answerDescription}} || Posted At: {{answer.timeAdded}}</li>
       </div>
     <br><br>
     {{/each}}

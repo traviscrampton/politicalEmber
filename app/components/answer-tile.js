@@ -8,9 +8,8 @@ export default Ember.Component.extend({
         timeAdded: new Date(),
         question: model
       }
-        debugger;
       this.set('answerDescription', ''),
       this.sendAction('saveAnswer', params);
+      },
     }
-  }
 });
